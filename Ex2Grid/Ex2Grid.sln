@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex2Grid.Android", "Ex2Grid\Ex2Grid.Android\Ex2Grid.Android.csproj", "{517F39BC-3994-4C05-9AD9-AD8D992B5917}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex2Grid", "Ex2Grid\Ex2Grid\Ex2Grid.csproj", "{D0047A03-B623-418F-B011-7DD95A616BAF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{517F39BC-3994-4C05-9AD9-AD8D992B5917}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{517F39BC-3994-4C05-9AD9-AD8D992B5917}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{517F39BC-3994-4C05-9AD9-AD8D992B5917}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{517F39BC-3994-4C05-9AD9-AD8D992B5917}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{517F39BC-3994-4C05-9AD9-AD8D992B5917}.Release|Any CPU.Build.0 = Release|Any CPU
+		{517F39BC-3994-4C05-9AD9-AD8D992B5917}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{D0047A03-B623-418F-B011-7DD95A616BAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0047A03-B623-418F-B011-7DD95A616BAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0047A03-B623-418F-B011-7DD95A616BAF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D0047A03-B623-418F-B011-7DD95A616BAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0047A03-B623-418F-B011-7DD95A616BAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0047A03-B623-418F-B011-7DD95A616BAF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {34C4E4DB-F9FE-4684-9958-A4774DD679B9}
+	EndGlobalSection
+EndGlobal

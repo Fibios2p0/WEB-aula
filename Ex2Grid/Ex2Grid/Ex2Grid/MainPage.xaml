@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Ex2Grid"
+             x:Class="Ex2Grid.MainPage">
+
+    <ListView x:Name="listViewVeiculos"></ListView>
+    <!--Grid  VerticalOptions="Start">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Text="Maverick V6"/>
+        <Label Grid.Row="0" Grid.Column="1" Text="7800"/>
+        <Label Grid.Row="1" Grid.Column="0" Text="Monza"/>
+        <Label Grid.Row="1" Grid.Column="1" Text="16900"/>
+        <Label Grid.Row="2" Grid.Column="0" Text="Ford Galaxy"/>
+        <Label Grid.Row="2" Grid.Column="1" Text="40000"/>
+    </Grid-->
+
+</ContentPage>
