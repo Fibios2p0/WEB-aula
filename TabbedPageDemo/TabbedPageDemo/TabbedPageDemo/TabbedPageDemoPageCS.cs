@@ -11,7 +11,7 @@ namespace TabbedPageDemo
         {
             var booleanConverter = new NonNullToBooleanConvert();
 
-            ItemTemplate = new DataTemplate()=> {
+            ItemTemplate = new DataTemplate(() => {
                 var nameLabel = new Label
                 {
                     FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
@@ -19,7 +19,7 @@ namespace TabbedPageDemo
                     HorizontalOptions = LayoutOptions.Center
                 };
                 nameLabel.SetBinding(Label.TextProperty, "Name");
-                var image = new Image(WidthRequest = 200, HeightRequest = 200);
+                var image = new Image { WidthRequest = 200, HeightRequest = 200 };
                 image.SetBinding(Image.SourceProperty, "PhotoUrl");
 
                 var familyLabel = new Label
@@ -61,14 +61,25 @@ namespace TabbedPageDemo
                     }
                 };
 
-                subFamilyStackLayout.SetBinding(VisualElement.IsVisibleProperty, new Binding("SubFamily", BindingMode.Default, booleanConverter));
+                subFamilyStackLayout.SetBinding(VisualElement.IsVisibleProperty, new Binding("SubFamily: ", BindingMode.Default, booleanConverter));
+
+                var tribeStackLayout = new StackLayout
+                {
+                    Orientation = StackOrientation.Horizontal,
+                    Children =
+                    {
+                        new Label {Text = "Tribe: ", HorizontalOptions= LayoutOptions.FillAndExpand},
+                        subFamilyLabel
+                    }
+                };
+                tribeStackLayout.SetBinding(VisualElement.IsVisibleProperty, new Binding("Tribe", BindingMode.Default, booleanConverter));
 
                 var contentPage = new ContentPage
                 {
                     Icon = "monkeyicon.png",
                     Content = new StackLayout
                     {
-                        Padding = new Thickness(5,25),
+                        Padding = new Thickness(5, 25),
                         Children =
                         {
                             nameLabel,
@@ -87,14 +98,25 @@ namespace TabbedPageDemo
                                             {   Text="Family: ", HorizontalOptions = LayoutOptions.FillAndExpand },
                                             familyLabel
                                         }
+                                    },
+                                    subFamilyStackLayout,
+                                    tribeStackLayout,
+                                    new StackLayout
+                                    {
+                                        Orientation = StackOrientation.Horizontal,
+                                        Children = {new Label { Text = "Genus", HorizontalOptions = LayoutOptions.FillAndExpand},
+                                        genusLabel
+                                        }
                                     }
                                 }
                             }
                         }
                     }
 
-                }
-            };
+                };
+                contentPage.SetBinding(TitleProperty, "Name");
+                return contentPage;
+            });
             
         }
     }
